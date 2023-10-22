@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+.image-gallery {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .image-gallery img {
+      width: 200px; /* Set a specific width */
+      height: 200px; /* Set a specific height */
+      margin: 5px; /* Add some margin for spacing */
+    }
+
+    @media (max-width: 668px) {
+      .image-gallery {
+        flex-direction: column;
+      }
+
+      .image-gallery img {
+        width: 100%; /* 100% width for responsiveness */
+        height: auto; /* Auto height */
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+        
+        header {
+            background-color: #121212;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            background-image: url('gym-hero.jpg');
+            background-size: cover;
+            text-align: center;
+            padding: 150px 0;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background-color: #267dbd;
+        }
+        .hero {
+            background-image: url('gym-hero.jpg');
+            background-size: cover;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Gym</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GYM MEDAN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to GYM MEDAN</h1>
+                <p>Your fitness journey starts here.</p>
+                <a href="#pricing" class="btn">Join Now</a>
+            </div>
+        </section>
+        <section id="classes" class="classes">
+            <h2>Classes</h2>
+            <p>Explore a variety of classes to suit your fitness goals:</p>
+            <div class="image-gallery">
+                <img src="https://i.pinimg.com/564x/da/ed/6f/daed6f807ad4ad5cc1813da338055a89.jpg" alt="Cardio Blast">
+                <img src="https://i.pinimg.com/564x/17/ce/52/17ce52e35c52f4b0252c8f35baa727cd.jpg" alt="Strength Training">
+                <img src="https://i.pinimg.com/564x/3f/02/e4/3f02e4611e6235949cb7e9ccaf16e14d.jpg" alt="Yoga & Meditation">
+            </div>
+            </div>
+        </section>
+        </section>
+        <section id="trainers" class="trainers">
+            <h2>Our Trainers</h2>
+            <p>Meet our experienced trainers who are here to guide you:</p>
+            <ul>
+                <li>Alvin Feriza - Certified Personal Trainer</li>
+                <li>Mahatwa - Yoga Instructor</li>
+                <li>Ginting - Nutrition Expert</li>
+            </ul>
+        </section>
+        <section id="pricing" class="pricing">
+            <h2>Pricing</h2>
+            <p>Choose a plan that suits your fitness needs:</p>
+            <ul>
+                <li>Basic Plan - Rp.300k/month</li>
+                <li>Premium Plan - Rp.550k/month</li>
+                <li>Annual Plan - Rp1.500k/year</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Contact us:</p>
+            <ul>
+                <li>Email: medangym2023@gmail.com</li>
+                <li>Phone: 081808820731 - MEDAN GYM</li>
+                <li>Visit us at Jl. Setia Luhur No A-12, Medan Helvetia</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 GYM MEDAN</p>
+    </footer>
+</body>
+</html>
